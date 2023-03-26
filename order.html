@@ -19,66 +19,39 @@
 
                 <ul class="primary-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="#">Catalog</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
                     <li><a href="#Contact">Contact</a></li>
-                    <li class="order-cta"><a href="order.html">Order</a></li>
+                    <li class="order-cta" class="current"><a href="order.html">Order</a></li>
                 </ul>
 
             </nav>
         </div>
     </div>
 
-    <section class="catalog-section">
+    <section class="order">
         <div class="container">
-            <ul>
-                <li>
-                    <a href="product.html"><img src="/images/cupcake.jpg" alt="cupcake"></a>
-                    <p>Cupcake</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/croissants.webp" alt="croissants"></a>
-                    <p>Croissants</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/cookies.jpg" alt="cookies"></a>
-                    <p>Cookies</p>
-                </li>
-            </ul>
+            <div class="order-right">
+                <h1>Order</h1>
+                <form action="">
+                    <label for="product">Product</label>
+                    <input type="text" id="product" name="product">
 
-            <ul>
-                <li>
-                    <a href="#"><img src="/images/scones.jfif" alt="cupcake"></a>
-                    <p>Scones</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/macarons.jpg" alt="croissants"></a>
-                    <p>Macarons</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/donuts.jpg" alt="cookies"></a>
-                    <p>Donuts</p>
-                </li>
-            </ul>
+                    <label for="thing">How mutch?</label>
+                    <input type="number" id="number" name="number">
 
-            <ul>
-                <li>
-                    <a href="#"><img src="/images/apple-pie.jpg" alt="cupcake"></a>
-                    <p>Apple pie</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/brownies.jpg" alt="croissants"></a>
-                    <p>Brownies</p>
-                </li>
-                <li>
-                    <a href="#"><img src="/images/cheesecake.jfif" alt="cookies"></a>
-                    <p>Cheesecake</p>
-                </li>
-            </ul>
+                    <label for="contact">Contact</label>
+                    <input type="phone" id="number" name="number">
 
-
+                    <label for="name-order">Your name</label>
+                    <input type="text" id="name-order" name="name-order">
+                    
+                    <input type="submit" class="order-but" value="Order">
+                </form>
+            </div>
+            <img src="images/logo.jpg" alt="Logo">
         </div>
     </section>
 
@@ -120,8 +93,6 @@
         mobileBtnExit.addEventListener('click', () => {
             nav.classList.remove('menu-btn');
         })
-
-
 
     </script>
 

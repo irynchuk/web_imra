@@ -56,7 +56,21 @@ section{
     font-size: bold;
 }
 
+.order {
+    background: var(--cream);
+    img {
+        display: none;
+    }
 
+    .contact-left {
+        h1 {
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--dark-b);
+        }
+    }
+
+}
 
 .left-col {
 
@@ -202,38 +216,31 @@ ul.features-list {
     li {
         background: var(--cream);
         text-align: center;
-        padding: 1em 0em;
+        padding: 2em 1em;
         width: 80%;
         margin: 0 auto 5em auto;
         border-radius: 2em;
-        color: var(--dark-b);
-
-        p{
-
-            font-weight: bold;
-            font-size: 1.5em;
-        }
 
         img{
-            width: 20em;
-            height: 20em;
-            border: 2px solid var(--dark-b);
+            width: 15em;
+            height: 15em;
+            border: 2px solid var(--caramel);
             border-radius: 2em;
             margin-top: -1em;
+
             }
 
         .cat-product {
-            li {
-                a {
-                    color: var(--cream);
-                    text-decoration: none;
-                    display: block;
-                    padding: .5em;
-                    font-size: 1.3em;
-                    text-align: center;
-                }
-            }
+            text-align: center;
+            font-size: bold;
         }
+    }
+
+    p {
+        color: var(--dark-b);
+        font-size: 1em;
+        line-height: 1.2em;
+        margin-top: .2em;        
     }
 }
 
@@ -332,6 +339,12 @@ nav {
         justify-self: unset;
     }
 
+    .order {
+        img {
+            display: none;
+        }
+    }
+
     .navbar nav {
         display: flex;
         justify-content: space-between;
@@ -372,9 +385,17 @@ nav {
             }
         }
     
+        .order {
+            background: var(--cream);
+            img {
+                display: flex;
+            }
+        
+        }
     }
 
 }
+
 
 @media only screen and (min-width: 1080px) {
     .container {
@@ -475,6 +496,45 @@ nav {
         iframe {
             height: 100%;
         }
-    } 
+    }
+
+    .order {
+        background: var(--cream);
+        color: var(--dark-b);
+        img {
+            display: block;
+            left: 0;
+            width: 40%;
+        }
+
+        input[type="submit"]{
+            background-color: var(--dark-g);
+            color: var(--cream);
+            font-weight: bold;
+            font-size: 1.3em;
+            border: 1px solid var(--caramel);
+            margin-bottom: 5em;
+            border-radius: 8em;
+            display: inline-block;
+            padding: .8em 2em;
+            cursor: pointer;
+        }
+
+    
+    }
+
+    .order-right {
+        position: absolute;
+        right: 0;
+        top: -2;
+        width: 45%;
+        height: 100%;
+
+        input, textarea {
+            width: 80%;
+        }
+    }
+
+
 
 }
