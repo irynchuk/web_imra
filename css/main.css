@@ -49,6 +49,9 @@ section {
   color: var(--dark-b);
   font-size: bold;
 }
+.hero b {
+  all: unset;
+}
 
 .order {
   background: var(--cream);
@@ -60,6 +63,18 @@ section {
   text-decoration: none;
   font-weight: bold;
   color: var(--dark-b);
+}
+.order input[type=submit] {
+  background-color: var(--dark-g);
+  color: var(--cream);
+  font-weight: bold;
+  font-size: 1.3em;
+  border: 1px solid var(--caramel);
+  margin-bottom: 5em;
+  border-radius: 8em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  cursor: pointer;
 }
 
 .left-col .subhead {
@@ -79,7 +94,11 @@ section {
   display: inline-block;
 }
 .left-col p {
-  display: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
 }
 .left-col .receipt {
   text-align: left;
@@ -187,6 +206,11 @@ ul.features-list li::before {
 .catalog-section {
   background: var(--cream);
   color: var(--dark-b);
+}
+.catalog-section img:hover {
+  box-shadow: 18px 8px 10px var(--lighr-g);
+  border: 2px solid var(--cream);
+  border-radius: 2em;
 }
 .catalog-section li {
   background: var(--cream);
@@ -365,16 +389,22 @@ nav li a:hover {
     width: 1;
   }
   .hero-img {
-    width: 35%;
-    margin-right: -0.5em;
-    margin-top: 2em;
+    width: 25em;
+    height: 25em;
+    border: 2px solid var(--caramel);
+    border-radius: 2em;
+    margin-top: -1em;
   }
   .hero p {
-    display: flex;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     color: var(--dark-b);
     font-size: 1.2em;
     margin-left: 3em;
     margin-right: 4em;
+    max-height: calc(line-height * 5);
   }
   ul.features-list {
     display: block;
@@ -390,12 +420,18 @@ nav li a:hover {
   .features-section {
     position: relative;
   }
+  .features-section img:hover {
+    box-shadow: 18px 8px 10px var(--lighr-g);
+    border: 2px solid var(--cream);
+    border-radius: 2em;
+  }
   .features-section img {
-    display: block;
+    display: flex;
     position: absolute;
     right: 5em;
-    width: 500px;
+    width: 400px;
     bottom: 7em;
+    margin-right: 10em;
   }
   .testimonials-section ul {
     display: flex;

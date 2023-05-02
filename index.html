@@ -40,7 +40,7 @@
                 <div class="hero-cta">
                     <ul>
                         <li>
-                            <a href="#" class="primary-cta">Create dessert</a>
+                            <a href="order.html" class="primary-cta">Create dessert</a>
                         </li>
                         <li>
                             <a href="#" class="instagram-cta">Instagram</a>
@@ -77,7 +77,7 @@
             <div class="contact-left">
                 <h2 id="Contact">Contact</h2>
 
-                <form action="">
+                <form onsubmit="sendEmail(); reset(); return false; ">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
 
@@ -97,23 +97,7 @@
         </div>
     </section>
 
-    <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-
-
-    </script>
+    <script type="module" src="js/navbar.js"></script>
 
 </body>
 </html>

@@ -32,7 +32,7 @@
     </div>
 
     <section class="hero">
-        <div class="container">
+        <div class ="container" id="prod-head">
             <div class="left-col">
                 <h3 class="subhead">Take a rest</h3>
 
@@ -40,7 +40,7 @@
                     <p class="product-name">Cupcake</p>
                 </div>
 
-                <div>
+                <div id="summary">
                     <p class="text-for-product">A cupcake is a small, individual-sized cake that is typically baked in a paper or foil cup. These sweet treats are usually topped with frosting and decorated with colorful sprinkles or other edible decorations. Cupcakes come in a variety of flavors, including chocolate, vanilla, and fruit, and can be customized to suit any taste. They are often served at parties and special occasions or enjoyed as a tasty treat any time of day. Cupcakes are a beloved dessert around the world and have become a popular symbol of celebration and joy.</p>
                 </div>
 
@@ -51,7 +51,7 @@
     </section>
 
     <section class="features-section">
-        <div class="container">
+        <div class="container" id="ingred">
             <ul class="features-list">
                 <li>Cherry</li>
                 <li>Raspberry</li>
@@ -60,10 +60,9 @@
                 <li>Chocolate</li>
                 <li>Salted caramel</li>
             </ul>
-
-            <img src="images/iteams.jpg" alt="Iteams">
-
         </div>
+        <img src="images/logo.jpg" alt="Iteams">
+
     </section>
 
     <section class="contact-section">
@@ -91,23 +90,9 @@
         </div>
     </section>
 
-    <script>
-
-        const mobileBtn = document.getElementById('mobile-cta')
-              nav = document.querySelector('nav')
-              mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menu-btn');
-        })
-
-        mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menu-btn');
-        })
-
-
-
-    </script>
+    <script type="module" src="js/product_head.js"></script>
+    <script type="module" src="js/product_receipt.js"></script>
+    <script type="module" src="js/navbar.js"></script>
 
 </body>
 </html>
